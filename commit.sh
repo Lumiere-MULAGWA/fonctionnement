@@ -40,7 +40,7 @@
 
                # Créer un fichier avec la date
                echo "Commit pour le $date (partie $((j+1)))" > "fichier_${month}_${day}_${j}.txt"
-               git add "fichier__${month}_${day}_${j}.txt"
+               git add "fichier_lmr_${month}_${day}_${j}.txt"
 
                # Faire le commit avec la date spécifiée
                git commit -m "Commit du $date (partie $((j+1)))" --date="$date"
