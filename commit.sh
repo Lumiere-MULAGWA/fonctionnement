@@ -36,11 +36,11 @@
            for ((j=0; j<num_commits; j++))
            do
                # Créer une date formatée
-               date=$(printf "2023-%02d-%02d" "$month" "$day")
+               date=$(printf "2025-%02d-%02d" "$month" "$day")
 
                # Créer un fichier avec la date
                echo "Commit pour le $date (partie $((j+1)))" > "fichier_${month}_${day}_${j}.txt"
-               git add "fichier_${month}_${day}_${j}.txt"
+               git add "fichier__${month}_${day}_${j}.txt"
 
                # Faire le commit avec la date spécifiée
                git commit -m "Commit du $date (partie $((j+1)))" --date="$date"
